@@ -119,24 +119,27 @@
     font-family: "Poppins";
 }
 
-:root{
+:root {
     --main-color: #fe5b3d;
     --second-color: #ffac38;
     --text-color: #444;
-    --gradient: linear-gradinet(#fe5b4d, #ffac38);
+    --gradient: linear-gradient(#fe5b4d, #ffac38);
 }
 
 /* Barra de desplazamiento personalizada */
 html::-webkit-scrollbar {
     width: 0.5rem;
 }
+
 html::-webkit-scrollbar-track {
     background: transparent;
 }
+
 html::-webkit-scrollbar-thumb {
     width: var(--main-color);
     border-radius: 5rem;
 }
+
 section{
     padding: 50px 100px;
 }
@@ -283,6 +286,10 @@ header{
     color: #fff;
     font-size: 1rem;
     font-family: 500;
+}
+
+.btn::placeholder {
+    color: #fff;
 }
 
 .form-container form .btn:hover{
@@ -438,5 +445,96 @@ header{
     }
     .form-container form {
         position: unset;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 18px 40px;
+    }
+    section {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 881px) {
+    .home {
+        background-position: left;
+    }
+    .form-container form {
+        bottom: 0.2rem;
+        left: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 11px 40px;
+    }
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .form-container form {
+        position: unset;
+    }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    header {
+        padding: 18px 40px;
+    }
+    section {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 881px) {
+    .home {
+        background-position: left;
+    }
+    .form-container form {
+        bottom: 0.2rem;
+        left: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 11px 40px;
+    }
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .form-container form {
+        position: unset;
+    }
+}
+
+@media (max-width: 412px) {
+    header {
+        padding: 10px 20px; /* Ajustar según sea necesario */
+    }
+    section {
+        padding: 20px; /* Ajustar según sea necesario */
+    }
+
+    .home {
+        background-position: left; /* Ajustar según sea necesario */
+    }
+
+    .form-container form {
+        bottom: 0.2rem;
+        left: 20px; /* Ajustar según sea necesario */
+    }
+
+    .text h1 {
+        font-size: 1.8rem; /* Ajustar según sea necesario */
     }
 }
