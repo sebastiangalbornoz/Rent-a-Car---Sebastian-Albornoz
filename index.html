@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent a Car - Seven Lakes</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rent a Car - Seven Lakes</title>
+        
+        <!-- Conexion con CSS -->
+        <link rel="stylesheet" href="styles.css">
     
-    <!-- Conexion con CSS -->
-    <link rel="stylesheet" href="styles.css">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/dist/css/alertify.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/dist/alertify.min.js"></script>
+    
+        <!-- SweetAlert2 CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+        <script src="main.js"></script>
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- Usuarios -->
+        <script src="usuarios.js"></script>
+
+
+        <!--SDK MercadoPago.js-->
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
+
 </head>
 <body>
     <!-- header -->
-    <header>
-        <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        
-        <ul class="navbar">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="/autos.html">Alquilar Autos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-        </ul>
-        <div class="header-btn">
-            <a href="#" class="sign-up">Inicia sesion</a>
-            <a href="#" class="sign-in">Registrate</a>
-        </div>
+<header>
+    <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    
+    <ul class="navbar">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="autos.html">Alquilar Autos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <!-- Añadir estos dos enlaces -->
+        <li><a href="#login">Iniciar Sesión</a></li>
+        <li><a href="#registro">Registrarse</a></li>
+    </ul>
+</header>
     </header>
 
     <!-- Inicio -->
@@ -60,6 +79,8 @@
         <input type="search" name="" id="" class="btn" placeholder="Buscar">
     </form>
         </div>
+
+        <div id="button-checkout"></div>
     </section>
 
     <!-- Ride -->
@@ -161,5 +182,9 @@
 
     <!-- Conexion con JS -->
     <script src="main.js"></script>
+
+    <!-- Usuarios JS -->
+    <script src="usuarios.js"></script>
+    
 </body>
 </html>

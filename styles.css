@@ -406,6 +406,25 @@ header{
     background: var(--main-color);
 }
 
+.form-container form #checkout-btn {
+    background: var(--second-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: 0.2s;
+    padding: 10px;
+}
+
+.form-container form #checkout-btn:hover {
+    background: #4691a3;
+}
+
+
 /* Responsive */
 
 @media (max-width: 991px) {
